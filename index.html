@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/Normlize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+    <title>ToDo</title>
+  </head>
+  <body class="light"> 
+    <img class="light D" src="./images/bg-desktop-light.jpg">
+    <img class="light m" src="./images/bg-mobile-light.jpg">
+    <img class="dark D" src="./images/bg-desktop-dark.jpg">
+    <img class="dark m" src="./images/bg-mobile-dark.jpg">
+    <div class="container">
+      <div class="txt"> 
+        <h1 class="bigT">TODO</h1>
+        <div class="sBtn">
+            <img class="light" src="./images/icon-moon.svg" alt="">
+            <img class="dark" src="./images/icon-sun.svg" alt="">
+        </div>
+      </div>
+      <div class="addTxt">
+        <input class="add light"  type="text" placeholder="Create a new todo...">
+      </div>
+      <div class="conTsk"> 
+        <div class="tasks">
+        </div>
+        <div class="listing"> 
+            <span class="tskNum">0 tasks left</span>
+            <ul>
+                <li class="all act"><a href="#"> All </a></li>
+                <li class="active"><a href="#">Active</a></li>
+                <li class="completed"><a href="#">Completed</a></li>
+            </ul>
+            <a class="cls" href="#">Clear Completed</a>
+        </div>
+    </div>
+    <ul class="m">
+        <li class="all act"><a href="#"> All </a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="completed"><a href="#">Completed</a></li>
+    </ul>
+    <span class="foot">Drag and drop to reorder the list</span>
+    </div>
+  </body>
+  <script src="./JS/main.js"></script>
+</html>

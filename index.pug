@@ -1,0 +1,31 @@
+doctype html
+html(lang = "en")
+    head
+        meta(charset = "utf-8")
+        meta(name = "viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./CSS/style.css")
+        link(rel="stylesheet", href="./CSS/Normlize.css")
+        title ToDo
+    body.light 
+        img(class = "light" src = "./images/bg-desktop-light.jpg") 
+        .container
+            .txt 
+                h1.bigT TODO
+                img(src="./images/icon-moon.svg", alt="")
+            .addTxt
+                input(type="text" placeholder = "Create a new todo..." class="add light") 
+            .conTsk 
+                .tasks
+                    -for(let i = 0; i< 5 ; i++)
+                        .tsk
+                            button.btn
+                            p.tskTxt Read for 1 hour
+                .listing 
+                    span.tskNum 5 tasks left
+                    ul
+                        li.all: a(href = "#")  All 
+                        li.active: a(href = "#") Active
+                        li.completed: a(href = "#") Completed
+                    a(href = "#") Clear Completed
+            span.foot Drag and drop to reorder the list
+        
